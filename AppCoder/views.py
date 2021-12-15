@@ -1,12 +1,12 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render
-from AppCoder.models import Curso
+from AppCoder.models import *
 
 # Create your views here.
-def curso(self):
-    curso = Curso(nombre="Desarrollo Web", camada="18998")
-    curso.save()
-    documentoDeTexto = f"----> Curso: {curso.nombre}   Camada: {curso.camada}"
+def auto(self):
+    auto = Autos(nombre="Palio", anio="1998")
+    auto.save()
+    documentoDeTexto = f"----> Nombre: {auto.nombre}   Anio: {auto.anio}"
 
     return HttpResponse(documentoDeTexto)
 
@@ -24,3 +24,15 @@ def modelos(request):
     
 def clasificaciones(request):
     return render(request, "AppCoder/clasificaciones.html")
+
+def formularioAutos(request):
+    
+    if request.method == "POST":
+        
+        auto = Autos (request.POST['nombre'], request.POST['anio'])
+        
+        auto.save()
+        
+        return render(request, "AppCoder/inicio.html")
+
+    return render(request, "AppCoder/formularioAutos.html")
