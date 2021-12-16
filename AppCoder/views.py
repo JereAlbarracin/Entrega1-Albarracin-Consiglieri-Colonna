@@ -33,13 +33,13 @@ def formularioAutos(request):
     
     if request.method == "POST":
 
-   #     miFormulario = formularioAutos(request.POST)
+        #miFormulario = formularioAutos(request.POST)
 
-    #    print(miFormulario)
+        #print(miFormulario)
         
-     #   if miFormulario.is_valid:
+        #if miFormulario.is_valid:
 
-      #      informacion = miFormulario.cleaned_data
+            #informacion = miFormulario.formularioAutos(request.user)
 
             auto = Autos(nombre=request.POST['nombre'], anio=request.POST['anio'])
         
@@ -48,9 +48,6 @@ def formularioAutos(request):
             return render(request, "AppCoder/inicio.html")
     
     #else:
-     #   miFormulario = formularioAutos()
+    #    miFormulario = formularioAutos()
 
-    return render(request, "AppCoder/formularioAutos.html")
-    
-    
-    #{"miFormulario":miFormulario})
+    return render(request, "AppCoder/formularioAutos.html") #{"miFormulario":miFormulario})

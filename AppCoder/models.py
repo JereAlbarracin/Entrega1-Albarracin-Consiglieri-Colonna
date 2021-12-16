@@ -2,7 +2,6 @@ from django.db import models
 
 # Create your models here.
 class Autos(models.Model):
-    #id = models.AutoField(auto_created=True, primary_key=True)
     nombre = models.CharField(max_length=40)
     anio = models.IntegerField()
 
