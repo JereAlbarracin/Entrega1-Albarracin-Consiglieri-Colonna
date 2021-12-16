@@ -1,0 +1,52 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+      <!-- banner -->
+      <section class="banner_main">
+        <div class="container">
+           <div class="row d_flex">
+              <div class="col-md-12">
+                 <div class="text-bg">
+                    <h1>FORMULARIO</h1>
+                    <!--<span>Encontra el auto para vos</span>
+                    <p>
+                       Si neceitas ayuda para encontrar un auto este es el lugar para hacerlo. 
+                       <head></head> -->
+                    </p>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     </div>
+     <!-- end banner -->
+
+{% endblock %}
+
+{% block contenidoQueCambia2 %}
+
+     <form action="/AppCoder/formularioAutos" method="POST">  {%csrf_token %}
+
+     <!--<p>Id: <input type="number"  name="Id" ></p> --> 
+
+     <p>Nombre: <input type="text"  name="nombre" ></p>
+
+     <p>Año: <input type="number"  name="anio" ></p>"
+     
+      
+   <!--   <table>   
+      
+         {    miFormulario.as_table      }}   
+         
+      </table> -->
+      
+
+     <input type="submit" value="Enviar">
+
+     </form>
+ 
+
+
+{% endblock %}
