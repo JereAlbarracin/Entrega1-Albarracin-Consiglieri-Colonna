@@ -11,5 +11,8 @@ urlpatterns = [
     path('clasificaciones', views.clasificaciones, name="Clasificaciones"),
     path('busqueda', views.busqueda, name= "Busqueda"),
     path('formularioAutos', views.formularioAutos, name="FormulariosAutos" ),
+    path('formularioMarcas', views.formularioMarcas, name="FormularioMarcas" ),
+    path('formularioModelos', views.formularioModelos, name="FormularioModelos" ),
+    path('formularioClasificaciones', views.formularioClasificaciones, name="FormularioClasificaciones" ),
 
 ]
