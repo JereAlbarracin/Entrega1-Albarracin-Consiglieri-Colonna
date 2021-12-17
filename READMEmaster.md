@@ -1,4 +1,4 @@
-# repositorioFinal
+# repositorio de la App para Coder
 
 En este repositorio se encuenta lo que va hasta ahora de la App armada para Autos.
 La misma tiene la tematica de autos. La pagina principal cuenta con un titulo y un par de subtitulos dando una idea de que va la pagina. 
