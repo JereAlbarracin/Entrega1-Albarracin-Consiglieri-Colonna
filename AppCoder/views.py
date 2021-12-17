@@ -71,7 +71,7 @@ def formularioModelos(request):
     if request.method == "POST":
 
 
-            modelo = ModeloCaracteristicas(cantPersonas=request.POST['cantPersonas'], caracteristica=request.POST['caracteristica'], numeroDeEjes=request.POST['numeroDeEjes'])
+            modelo = ModeloCaracteristicas(cantPersonas=request.POST['cantPersonas'], caracteristica=request.POST['caracteristica'], ejes=request.POST['ejes'])
         
             modelo.save()
         

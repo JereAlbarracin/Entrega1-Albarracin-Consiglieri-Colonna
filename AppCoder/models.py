@@ -13,7 +13,7 @@ class Marcas(models.Model):
 class ModeloCaracteristicas(models.Model):
     cantPersonas = models.IntegerField()
     caracteristica = models.CharField(max_length=30)
-    numeroDeEjes = models.IntegerField()
+    ejes = models.IntegerField()
 
 class Clasificaciones(models.Model):
     terreno = models.CharField(max_length=40)
